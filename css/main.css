@@ -1,0 +1,113 @@
+/* MAIN STYLE STARTS HERE */
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+body {
+    font-family: var(--font);
+    background-image: var(--bg-img), -o-linear-gradient(315deg, var(--bg-primary), var(--bg-secondary));
+    background-image: var(--bg-img), linear-gradient(135deg, var(--bg-primary), var(--bg-secondary)); /* Fallback to gradient if no image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Main Content Formatting */
+
+div#container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 25px 20px;
+}
+
+div.content {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Header Section */
+
+header {
+    margin: 0 0 40px 0;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border: var(--img-border-size) solid var(--img-border-clr);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: .95rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: var(--color);
+}
+
+/* Link Box */
+
+section.link-box {
+    margin-bottom: 3rem;
+}
+
+ul.links li {
+    margin: 0 0 25px 0;
+}
+
+ul.links li a {
+    font-size: 1rem;
+    font-weight: 500;
+    background: var(--btn-bg-clr);
+    color: var(--btn-txt-clr);
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: .15s ease;
+    -o-transition: .15s ease;
+    transition: .15s ease;
+    border: var(--btn-border-size) solid var(--btn-border-clr);
+    border-radius: var(--btn-border-rad);
+}
+
+ul.links li a:hover {
+    background: var(--btn-bg-clr-h);
+    color: var(--btn-txt-clr-h);
+    border: var(--btn-border-size-h) solid var(--btn-border-clr-h);
+}
+
+/* Social Links */
+
+ul.social-links li {
+    display: inline-block;
+}
+
+ul.social-links li a {
+    color: var(--socials-clr);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: .75rem;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
+}
+
+ul.social-links li a:hover {
+    color: var(--socials-clr-h);
+}
+
+ul.social-links li a span {
+    font-size: 0;
+}

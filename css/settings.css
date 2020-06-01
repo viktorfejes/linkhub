@@ -1,0 +1,158 @@
+/* 
+   name:       LINKHUB APP
+   version:    v1.0 (2020-06-01)
+   author:     Viktor Fejes
+   email:      viktor@viktorfejes.com
+   License:    MIT License
+*/
+
+:root {
+
+/*  =========================
+    USER SETTINGS START HERE.
+    ========================= */
+
+/**
+ *  Costumize your template here.
+ *  Just follow the instructions and change the default values to your own.
+ */
+
+    /* == PROFILE IMAGE SETTINGS == */
+    /* This sets the border color of your profile image (unless --profile-img-border-size is zero.)
+       Default is #CFF09E; 
+    */
+    --profile-img-border-color: #CFF09E;
+
+    /* This sets the border size of your profile image.
+       If value is 0 or 0px, no border will show up.
+
+       Default is 0; 
+    */
+    --profile-img-border-size: 0;
+
+
+    /* == TEXT SETTINGS == */
+
+    /* Define the font-family to use for the entire site.
+       Don't forget to include it in the html header (if it's a web hosted font), or upload to a folder.
+
+       Default is 'Roboto', sans-serif;
+    */
+    --font-family: 'Roboto', sans-serif;
+
+    /* Define the color of text that is not on a button.
+       Default is #141414;
+    */
+    --text-color: #141414;
+
+
+    /* == BUTTON SETTINGS == */
+
+    /* Color of text on button when mouse is not over it.
+       Default is #CFF09E;
+    */
+    --button-text-color: #CFF09E;
+
+    /* Color of button when mouse is not over it.
+       You can use 'transparent' (without the marks) to have transparent buttons.
+       e.g.: --button-background-color: transparent;
+
+       Default is #0B486B;
+    */
+    --button-background-color: #0B486B;
+
+    /* Set the color and size of your buttons' borders.
+       If you don't want a border, set --button-border-size to 0.
+
+       Default:
+       --button-border-color: #0B486B;
+       --button-border-size: 3px;
+     */
+    --button-border-color: #0B486B;
+    --button-border-size: 3px;
+
+    /* Here you can make your buttons' corners rounded or not.
+       0 or 0px means not rounded, and higher values will add more roundness.
+
+       Default is 35px;
+    */
+    --button-border-radius: 35px;
+
+
+    /* == BUTTON HOVER STATE == */
+    /* These values set how your buttons change when your mouse is over them.
+       Apply the settings the same way as instructed in the BUTTON SETTINGS section.
+
+       Default:
+       --button-text-color-hover: #0B486B;
+       --button-background-color-hover: transparent;
+       --button-border-color-hover: #0B486B;
+       --button-border-size-hover: 3px;
+     */
+    --button-text-color-hover: #0B486B;
+    --button-background-color-hover: transparent;
+    --button-border-color-hover: #0B486B;
+    --button-border-size-hover: 3px;
+
+
+    /* == BACKGROUND SETTINGS == */
+    /* Customise your background.
+
+       Put your image in the images directory,
+       then type the name of the file with extension to --background-image.
+       If left empty, background will have no image.
+
+       e.g.: --background-image: url('../images/mybackground.jpg');
+    */
+    --background-image: url('../images/');
+
+    /* Here, you can either create a gradient or a solid background.
+       If two different colors used, the background will have a gradient.
+       If both colors are the same, the background will be solid.
+
+       Default:
+       --background-color-primary: #3B8686;
+       --background-color-secondary: #79BD9A;
+     */
+    --background-color-primary: #3B8686;
+    --background-color-secondary: #79BD9A;
+
+
+    /* == SOCIAL ICONS SETTINGS == */
+    /* Set the color of your social icons here.
+       Default is #3B8686;
+    */
+    --social-icons-color: #3B8686;
+
+    /* Set the color of your socials when mouse is over.
+       Default is #0B486B;
+    */
+    --social-icons-hover: #0B486B;
+
+/* ===============================================================================
+    END.
+    NO EDITS UNDER THIS LINE.
+    ============================================================================== */
+
+
+    /* Actual settings based on user input with fallbacks. */
+    --img-border-clr: var(--profile-img-border-color, #CFF09E);
+    --img-border-size: var(--profile-img-border-size, 0);
+    --font: var(--font-family, '\'Roboto\', sans-serif');
+    --color: var(--text-color, #141414);
+    --btn-txt-clr: var(--button-text-color, #CFF09E);
+    --btn-txt-clr-h: var(--button-text-color-hover, #0B486B);
+    --btn-bg-clr: var(--button-background-color, #0B486B);
+    --btn-bg-clr-h: var(--button-background-color-hover, transparent);
+    --btn-border-clr: var(--button-border-color, #0B486B);
+    --btn-border-size: var(--button-border-size, 3px);
+    --btn-border-rad: var(--button-border-radius, 35px);
+    --btn-border-clr-h: var(--button-border-color-hover, #0B486B);
+    --btn-border-size-h: var(--button-border-size-hover, 3px);
+    --bg-primary: var(--background-color-primary, #3B8686);
+    --bg-secondary: var(--background-color-secondary, #79BD9A);
+    --bg-img: var(--background-image, linear-gradient(135deg, var(--bg-primary), var(--bg-secondary)));
+    --socials-clr: var(--social-icons-color, #3B8686);
+    --socials-clr-h: var(--social-icons-hover, #0B486B);
+
+}
